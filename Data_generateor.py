@@ -21,6 +21,7 @@ for index, data in enumerate(price_data['date']):
 price_data.to_csv('BTC_without_time.csv', index=False)
 '''
 
+# 코인니스 데이터 모으기
 from datetime import datetime, timedelta, date
 import pandas as pd
 from bs4 import BeautifulSoup 
@@ -32,7 +33,7 @@ price_data = pd.read_csv('Datas/BTC_without_time.csv')
 price_data2 = price_data.set_index('date').to_dict()
 
 URL = "https://kr.coinness.com/news/"
-max_num = 1004924
+max_num = 1007586 # update 09/04
 last_num = 1000106
 
 date_range = 365
@@ -57,9 +58,14 @@ while max_num >= last_num + num :
         article_title = article_title.replace(' | 코인니스', '')
     elif ' | CoinNess' in article_title:
         article_title = article_title.replace(' | CoinNess', '')
-    article_title = re.compile('[가-힣]+').findall(article_title)
+    # article_title = re.compile('[가-힣]+').findall(article_title)
     # print(article_title)
-    article_date = soup.select_one('#detail > div > div.fl > div > section > div > div.time > span.month').get_text()
+    article_date = soup.select_one('#detail > div > div.fl > div > section > div > div.time > span.month')
+    if article_date:
+        article_date = article_date.get_text()
+    else:
+        continue
+
     article_date_2 = convert_date_format(article_date)
     num += 2
     if article_date_2 not in price_data2['price']:
@@ -67,6 +73,7 @@ while max_num >= last_num + num :
         continue
     
     if article_title:
+        print(article_title)
         article_title = ' '.join(article_title)
         # print(article_title)
         will_save_df = will_save_df.append(
@@ -77,7 +84,7 @@ while max_num >= last_num + num :
 
     
 
-will_save_df.to_csv('BTC_dataset_1.csv', index=False)
+will_save_df.to_csv('BTC_dataset.csv', index=False)
 
 
 
@@ -86,5 +93,3 @@ will_save_df.to_csv('BTC_dataset_1.csv', index=False)
 # print(last_date)
 # print(article_date)
 # print(article_title)
-
- 
