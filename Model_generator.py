@@ -22,6 +22,8 @@ for data, result in zip(datas['Text'], datas['Price']):
     word_data.append([word for word in data])
     result_data.append(result)
 
+print('==데이터 수:', len(word_data))
+exit
 
 X_train = word_data[:int(len(word_data)/3)] # 학습용 데이터
 Y_train = result_data[:int(len(word_data)/3)]
