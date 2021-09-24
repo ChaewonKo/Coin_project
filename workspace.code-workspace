@@ -1,10 +1,19 @@
 {
     "folders": [
         {
+            "path": "../KNY02"
+        },
+        {
+            "path": "../Kakao_macro"
+        },
+        {
             "path": "."
         },
         {
-            "path": "../KNY02"
+            "path": "../book-cryptocurrency/ch10"
         }
-    ]
+    ],
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+    }
 }
