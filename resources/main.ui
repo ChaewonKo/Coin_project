@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1080</width>
-    <height>689</height>
+    <width>1492</width>
+    <height>916</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,297 +17,75 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>10</y>
-      <width>631</width>
-      <height>280</height>
+      <x>30</x>
+      <y>730</y>
+      <width>911</width>
+      <height>131</height>
      </rect>
     </property>
    </widget>
    <widget class="QListWidget" name="tickerList">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>320</y>
-      <width>190</width>
-      <height>280</height>
+      <x>860</x>
+      <y>20</y>
+      <width>300</width>
+      <height>691</height>
      </rect>
     </property>
     <property name="alternatingRowColors">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
-    <property name="geometry">
-     <rect>
-      <x>900</x>
-      <y>120</y>
-      <width>60</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>장기</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>720</x>
-      <y>30</y>
-      <width>121</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>18</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>주문 가능</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>890</x>
-      <y>90</y>
-      <width>121</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="checkBox_2">
-    <property name="geometry">
-     <rect>
-      <x>950</x>
-      <y>120</y>
-      <width>50</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>단기</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>890</x>
-      <y>60</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>720</x>
-      <y>120</y>
-      <width>121</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>18</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>투자 성향</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>720</x>
-      <y>60</y>
-      <width>121</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>18</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>자동 거래 비율</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>930</x>
-      <y>60</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>%</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>890</x>
-      <y>30</y>
-      <width>111</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>1000</x>
-      <y>30</y>
-      <width>16</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>17</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>원</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>170</y>
-      <width>331</width>
+      <x>970</x>
+      <y>810</y>
+      <width>160</width>
       <height>50</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>자세히 보기</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>950</x>
-      <y>60</y>
-      <width>71</width>
-      <height>20</height>
+      <x>970</x>
+      <y>730</y>
+      <width>161</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>7</pointsize>
      </font>
-    </property>
-    <item>
-     <property name="text">
-      <string>지정</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>10</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>25</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>50</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>75</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>100</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>710</x>
-      <y>220</y>
-      <width>161</width>
-      <height>50</height>
-     </rect>
     </property>
     <property name="text">
      <string>자동 거래 시작</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>90</y>
-      <width>121</width>
-      <height>20</height>
+      <x>970</x>
+      <y>770</y>
+      <width>161</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>18</pointsize>
+      <pointsize>7</pointsize>
      </font>
-    </property>
-    <property name="text">
-     <string>자동 거래 금액</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>880</x>
-      <y>220</y>
-      <width>161</width>
-      <height>50</height>
-     </rect>
     </property>
     <property name="text">
      <string>자동 거래 중지</string>
@@ -316,9 +94,9 @@
    <widget class="QTableWidget" name="tableAsks">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>320</y>
-      <width>180</width>
+      <x>30</x>
+      <y>440</y>
+      <width>601</width>
       <height>151</height>
      </rect>
     </property>
@@ -336,7 +114,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="lineWidth">
@@ -381,14 +159,14 @@
     <attribute name="horizontalHeaderCascadingSectionResizes">
      <bool>false</bool>
     </attribute>
-    <attribute name="horizontalHeaderMinimumSectionSize">
-     <number>20</number>
-    </attribute>
     <attribute name="horizontalHeaderDefaultSectionSize">
      <number>80</number>
     </attribute>
     <attribute name="horizontalHeaderHighlightSections">
      <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>20</number>
     </attribute>
     <attribute name="horizontalHeaderStretchLastSection">
      <bool>true</bool>
@@ -399,11 +177,11 @@
     <attribute name="verticalHeaderCascadingSectionResizes">
      <bool>false</bool>
     </attribute>
-    <attribute name="verticalHeaderMinimumSectionSize">
-     <number>10</number>
-    </attribute>
     <attribute name="verticalHeaderDefaultSectionSize">
      <number>12</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>10</number>
     </attribute>
     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
      <bool>false</bool>
@@ -422,6 +200,11 @@
      <property name="text">
       <string>가격</string>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
     </column>
     <column>
      <property name="text">
@@ -432,15 +215,16 @@
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>990</x>
-      <y>380</y>
+      <x>790</x>
+      <y>490</y>
       <width>41</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
       <kerning>true</kerning>
      </font>
@@ -452,15 +236,15 @@
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
      <rect>
-      <x>950</x>
-      <y>340</y>
+      <x>750</x>
+      <y>450</y>
       <width>80</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>7</pointsize>
      </font>
     </property>
    </widget>
@@ -470,15 +254,16 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>950</x>
-      <y>380</y>
+      <x>750</x>
+      <y>490</y>
       <width>41</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -492,26 +277,31 @@
    <widget class="QLineEdit" name="lineEdit_4">
     <property name="geometry">
      <rect>
-      <x>950</x>
-      <y>360</y>
+      <x>750</x>
+      <y>470</y>
       <width>60</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>7</pointsize>
      </font>
     </property>
    </widget>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>430</y>
+      <x>690</x>
+      <y>540</y>
       <width>140</width>
       <height>140</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -523,11 +313,16 @@
      <widget class="QFrame" name="frame_6">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>0</x>
         <y>20</y>
         <width>70</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -546,7 +341,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -567,7 +362,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -581,7 +376,7 @@
      <widget class="QComboBox" name="comboBox_3">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>70</x>
         <y>20</y>
         <width>60</width>
         <height>20</height>
@@ -595,7 +390,7 @@
       </property>
       <property name="font">
        <font>
-        <pointsize>10</pointsize>
+        <pointsize>7</pointsize>
        </font>
       </property>
       <item>
@@ -632,11 +427,16 @@
      <widget class="QFrame" name="frame_7">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>0</x>
         <y>40</y>
         <width>70</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -655,7 +455,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -676,7 +476,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -690,11 +490,16 @@
      <widget class="QFrame" name="frame_8">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>0</x>
         <y>80</y>
         <width>120</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -713,7 +518,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -734,7 +539,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -760,15 +565,15 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>340</y>
+      <x>690</x>
+      <y>450</y>
       <width>51</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>7</pointsize>
      </font>
     </property>
     <property name="text">
@@ -778,10 +583,10 @@
    <widget class="QTableWidget" name="tableBids">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>470</y>
-      <width>180</width>
-      <height>130</height>
+      <x>30</x>
+      <y>590</y>
+      <width>601</width>
+      <height>120</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -798,7 +603,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="lineWidth">
@@ -840,11 +645,11 @@
     <attribute name="horizontalHeaderVisible">
      <bool>false</bool>
     </attribute>
-    <attribute name="horizontalHeaderMinimumSectionSize">
-     <number>20</number>
-    </attribute>
     <attribute name="horizontalHeaderDefaultSectionSize">
      <number>80</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>20</number>
     </attribute>
     <attribute name="horizontalHeaderStretchLastSection">
      <bool>true</bool>
@@ -852,11 +657,11 @@
     <attribute name="verticalHeaderVisible">
      <bool>false</bool>
     </attribute>
-    <attribute name="verticalHeaderMinimumSectionSize">
-     <number>10</number>
-    </attribute>
     <attribute name="verticalHeaderDefaultSectionSize">
      <number>12</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>10</number>
     </attribute>
     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
      <bool>false</bool>
@@ -885,15 +690,15 @@
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>410</y>
+      <x>690</x>
+      <y>520</y>
       <width>51</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>7</pointsize>
      </font>
     </property>
     <property name="text">
@@ -903,15 +708,15 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>360</y>
+      <x>690</x>
+      <y>470</y>
       <width>51</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>7</pointsize>
      </font>
     </property>
     <property name="text">
@@ -921,11 +726,16 @@
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>570</y>
+      <x>690</x>
+      <y>680</y>
       <width>140</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>주문하기</string>
@@ -934,15 +744,15 @@
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>380</y>
+      <x>690</x>
+      <y>490</y>
       <width>51</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>7</pointsize>
      </font>
     </property>
     <property name="text">
@@ -952,8 +762,8 @@
    <widget class="QToolButton" name="toolButton">
     <property name="geometry">
      <rect>
-      <x>1010</x>
-      <y>360</y>
+      <x>810</x>
+      <y>470</y>
       <width>20</width>
       <height>20</height>
      </rect>
@@ -970,10 +780,10 @@
    <widget class="QChartView" name="priceView" native="true">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>320</y>
-      <width>420</width>
-      <height>281</height>
+      <x>30</x>
+      <y>20</y>
+      <width>811</width>
+      <height>411</height>
      </rect>
     </property>
    </widget>
@@ -983,8 +793,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1080</width>
-     <height>24</height>
+     <width>1492</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

@@ -1,0 +1,16 @@
+***
+python 3.8 (3.8 이전 버젼은 호환)
+***
+
+$ pip install pyqt5
+$ pip install pyqt5-tools
+$ pip install pyupbit
+$ pip install beautifulsoup4
+$ pip install requests
+$ pip install matplotlib
+$ pip install mplfinance
+
+# 아래의 링크에서 1~3번까지 진행
+# https://webnautes.tistory.com/1394
+$ pip install JPype1==0.7.0
+$ pip install konlpy

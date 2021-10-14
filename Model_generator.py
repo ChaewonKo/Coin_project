@@ -23,9 +23,16 @@ for data, result in zip(datas['Text'], datas['Price']):
     result_data.append(result)
 
 print('==데이터 수:', len(word_data))
-exit
 
 X_train = word_data[:int(len(word_data)/3)] # 학습용 데이터
+# print(X_train)
+# f = open('X_train.txt', 'w')
+# for i in X_train:
+#     text = ' '.join(i) + '\n'
+#     print(text)
+#     f.write(text)
+# f.close()
+
 Y_train = result_data[:int(len(word_data)/3)]
 X_test = word_data[-int(len(word_data)/3):] # 평가용 데이터
 Y_test = result_data[-int(len(word_data)/3): ]
@@ -88,8 +95,8 @@ Y_test= np.array(Y_test)
 #     print(X_train[i])
 #     print(Y_train[i])
 
-history = model.fit(X_train, Y_train, epochs=15, batch_size=60, validation_split=0.2)
-# model.save('First_model')
+history = model.fit(X_train, Y_train, epochs=500, batch_size=60, validation_split=0.2)
+model.save('First_model1.h5')
 loss_and_metrics = model.evaluate(X_test, Y_test)
 print('')
 print('loss_and_metrics : ' + str(loss_and_metrics))
