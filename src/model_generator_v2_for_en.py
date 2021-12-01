@@ -1,4 +1,3 @@
-from os import pipe
 import re, pickle
 from bs4 import BeautifulSoup
 import nltk
@@ -14,6 +13,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
 
+import googletrans
 
 class Model_generator_en():
     def __init__(self) -> None:
@@ -57,12 +57,13 @@ class Model_generator_en():
             scoring='roc_auc')
 
         print('buf :', buf)
-        pickle.dump(forest, open('finalized_model.sav', 'wb'))
-        pickle.dump(vectorizer, open("vectorizer.pickle", "wb"))
+        pickle.dump(forest, open('finalized_model_ko.sav', 'wb'))
+        pickle.dump(vectorizer, open("vectorizer_ko.pickle", "wb"))
 
 
 
     def review_to_words(self, raw_review):
+        # print(raw_review)
         # 1. HTML 제거
         review_text = BeautifulSoup(raw_review, 'html.parser').get_text()
         # 2. 영문자가 아닌 문자는 공백으로 변환
@@ -81,6 +82,9 @@ class Model_generator_en():
 
     def _apply_df(self, args):
         df, func, kwargs = args
+        print('df :', df)
+        print('func :', func)
+        print('kwargs :', kwargs)
         return df.apply(func, **kwargs)
 
     def apply_by_multiprocessing(self, df, func, **kwargs):

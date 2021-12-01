@@ -21,7 +21,7 @@ class AiThread(QThread):
         self.command_content = dict()
         self.first_index = 0
         self.X_train = list()
-        self.file_path_of_articles_list = r'Datas/articles_one_day.csv'
+        self.file_path_of_articles_list = r'Datas/train_en.csv'
         self.file_path_of_buy_sell_list = r'Datas/buy_sell_list.csv'
         self.mtime_article_list = os.path.getmtime(self.file_path_of_articles_list)
         self.mtime_buy_sell_list = os.path.getmtime(self.file_path_of_buy_sell_list)

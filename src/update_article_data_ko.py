@@ -75,7 +75,7 @@ class Crawling_data_Ko():
             article['evaluation'], article['accuracy'] = self.get_score(
                 date=article_date[0],
                 for_data_crawling=True ) # evaluation, accuracy
-            article['contents'] = article_content # contents
+            article['contents'] = row[2] # contents
 
             # print(article)
             print('데이터 베이스')

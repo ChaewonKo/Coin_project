@@ -233,7 +233,7 @@ class MainWindow(QMainWindow, main_ui):
         if 'init_article_list' in data:
             self.article_db['article_list'] = data['init_article_list']
             articles_day_rowCount = 0
-            self.articles_day.clear()
+            # self.articles_day.clear()
             for i in range(self.articles_day.rowCount()):
                 self.articles_day.removeRow(0)
 
@@ -244,6 +244,7 @@ class MainWindow(QMainWindow, main_ui):
                 buf.setTextAlignment(Qt.AlignHCenter)
                 self.articles_day.setItem(articles_day_rowCount, 0, buf)
                 self.articles_day.setItem(articles_day_rowCount, 1, QTableWidgetItem(str(row['title'])))
+
                 buf = QTableWidgetItem(str(row['accuracy']))
                 buf.setTextAlignment(Qt.AlignHCenter)
                 self.articles_day.setItem(articles_day_rowCount, 2, buf)
@@ -281,9 +282,9 @@ class MainWindow(QMainWindow, main_ui):
         self.articles_day.setColumnWidth(0, int(self.articles_day.width()*0.2))
         self.articles_day.setColumnWidth(1, int(self.articles_day.width()*0.7))
         self.articles_day.setColumnWidth(2, int(self.articles_day.width()*0.08))
-        self.articles_contents.setColumnWidth(0, int(self.articles_day.width()*0.75))
-        self.articles_contents.setColumnWidth(1, int(self.articles_day.width()*0.05))
-        self.articles_contents.setColumnWidth(2, int(self.articles_day.width()*0.05))
+        self.articles_contents.setColumnWidth(0, int(self.articles_contents.width()*0.75))
+        self.articles_contents.setColumnWidth(1, int(self.articles_contents.width()*0.05))
+        self.articles_contents.setColumnWidth(2, int(self.articles_contents.width()*0.05))
         self.ai = AiThread()
         self.article_db = dict()
         self.ai_thread_command.connect(self.ai.set_command)
@@ -313,7 +314,7 @@ class MainWindow(QMainWindow, main_ui):
         self.articles_contents.clearContents()
         articles_contents_rowCount = 0
         index = self.articles_day.currentRow()
-        texts = self.article_db['article_list'][index]['contents'].split('. ')
+        texts = self.article_db['article_list'].iloc[index, :]['contents'].split('. ')
         for row  in texts:
             self.articles_contents.insertRow(articles_contents_rowCount)
             self.articles_contents.setItem(articles_contents_rowCount, 0, QTableWidgetItem(str(row)))

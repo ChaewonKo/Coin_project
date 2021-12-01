@@ -3507,16 +3507,19 @@ QHeaderView::section  {
       <number>0</number>
      </property>
      <property name="columnCount">
-      <number>3</number>
+      <number>1</number>
      </property>
      <attribute name="horizontalHeaderVisible">
       <bool>true</bool>
      </attribute>
      <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>137</number>
+      <number>431</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>431</number>
      </attribute>
      <attribute name="verticalHeaderVisible">
-      <bool>true</bool>
+      <bool>false</bool>
      </attribute>
      <attribute name="verticalHeaderCascadingSectionResizes">
       <bool>false</bool>
@@ -3527,16 +3530,6 @@ QHeaderView::section  {
      <column>
       <property name="text">
        <string>기사 내용</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>평가</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>신뢰도</string>
       </property>
      </column>
     </widget>
